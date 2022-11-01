@@ -116,3 +116,23 @@ main {
 .scrollarea {
     overflow: auto;
 }
+
+.marquee {
+    position: absolute;
+    animation-name: word;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    top: 4px;
+    animation-timing-function: linear;
+}
+
+@keyframes word {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
