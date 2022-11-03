@@ -224,11 +224,43 @@
                 <div class="marquee">我是跑馬燈</div>
             </div>
         </div>
+        <div class="ps-2 d-flex align-items-center flex-wrap">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="#">登入櫃台</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">一般取票/取號機取票</li>
+                    <li class="breadcrumb-item active" aria-current="page">票單結案</li>
+                    <li class="breadcrumb-item active" aria-current="page">登出櫃台</li>
+                </ol>
+            </nav>
+            <div class="ms-auto pe-1" style="margin-bottom: -25px;">
+                <button type="button" class="btn btn-outline-info btn-sm">查詢優惠折抵額度</button>
+            </div>
+            <div class="w-100 ps-1"> 沒有處裡中的票號!</div>
+        </div>
         <div class="info-container">資料區</div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">門號查詢</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">台灣大客戶/網路會員</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">後送處裡</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">到店紀錄</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">用戶接觸紀錄</a>
+            </li>
+        </ul>
+
         <div class="search-container d-flex flex-grow-1">
 
             <div class="p-3 d-flex flex-column border-end border-secondary border-4 w-25">
-                <div class="pb-3"> 
+                <div class="pb-3">
                     <label for="inputState" class="form-label">查詢方式</label>
                     <select id="inputState" class="form-select">
                         <option selected>門號</option>
@@ -241,23 +273,23 @@
                 </div>
                 <div class="form-floating pb-3">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected>門號</option>
-                      <option value="1">證號</option>
-                      <option value="2">合約編號</option>
-                      <option value="3">帳單號碼</option>
+                        <option selected>門號</option>
+                        <option value="1">證號</option>
+                        <option value="2">合約編號</option>
+                        <option value="3">帳單號碼</option>
                     </select>
                     <label for="floatingSelect">查詢方式</label>
-                  </div>
-                  <div class="form-floating pb-3">
+                </div>
+                <div class="form-floating pb-3">
                     <input type="text" class="form-control" id="seachKeyword" placeholder="查詢號碼">
                     <label for="seachKeyword">查詢號碼</label>
-                  </div>
-                  <div class="d-grid gap-2">
+                </div>
+                <div class="d-grid gap-2">
                     <button type="button" class="btn btn-primary">確定</button>
-                  </div>
+                </div>
             </div>
             <div class="p-3 w-75">查詢條件</div>
-           
+
         </div>
 
     </div>
