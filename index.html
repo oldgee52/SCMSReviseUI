@@ -268,10 +268,10 @@
                         <option>合約編號</option>
                     </select>
                 </div>
-                <div class="pb-3"><label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                <div class="pb-3"><label for="inputEmail4" class="form-label">查詢號碼</label>
+                    <input type="text" class="form-control" id="inputEmail4">
                 </div>
-                <div class="form-floating pb-3">
+                <!-- <div class="form-floating pb-3">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>門號</option>
                         <option value="1">證號</option>
@@ -283,12 +283,64 @@
                 <div class="form-floating pb-3">
                     <input type="text" class="form-control" id="seachKeyword" placeholder="查詢號碼">
                     <label for="seachKeyword">查詢號碼</label>
-                </div>
+                </div> -->
                 <div class="d-grid gap-2">
                     <button type="button" class="btn btn-primary">確定</button>
                 </div>
             </div>
-            <div class="p-3 w-75">查詢條件</div>
+            <div class="p-3 w-75 d-flex flex-column">
+                <div>查詢條件：門號</div>
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">系統</th>
+                            <th scope="col">合約代碼</th>
+                            <th scope="col">門號</th>
+                            <th scope="col">姓名</th>
+                            <th scope="col">申裝日</th>
+                            <th scope="col">門號狀態</th>
+                            <th scope="col">主約到期日</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>TWM</td>
+                            <td>646456</td>
+                            <td>0909123321</td>
+                            <td>小小王</td>
+                            <td>2018-12-30</td>
+                            <td>正常使用中</td>
+                            <td>2025-05-12</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>070</td>
+                            <td>1232</td>
+                            <td>07012325688</td>
+                            <td>小小王</td>
+                            <td>2018-12-30</td>
+                            <td>正常使用中</td>
+                            <td>2025-05-12</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>INPPS</td>
+                            <td>645556</td>
+                            <td>0909123325</td>
+                            <td>小小王</td>
+                            <td>2018-12-30</td>
+                            <td>正常使用中</td>
+                            <td></td>
+
+                          </tr>
+                        </tbody>
+                </div>
+            </div>
 
         </div>
 
