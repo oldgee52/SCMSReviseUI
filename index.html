@@ -12,207 +12,215 @@
 
 <body>
     <div class="my-container h-100 d-flex flex-column">
-    <div class="side-navbar d-flex justify-content-between flex-wrap flex-column scrollarea bg-light" id="sidebar">
-        <ul class="list-unstyled ps-0">
+        <div class="side-navbar d-flex justify-content-between flex-wrap flex-column scrollarea bg-light" id="sidebar">
+            <ul class="list-unstyled ps-0">
 
-            <!-- <img src="./img/RGB_TWM_Logo+_橫式_灰階白字_中文_中文_橫式_灰階白字.png" class="img-fluid" alt="Responsive image"> -->
+                <!-- <img src="./img/RGB_TWM_Logo+_橫式_灰階白字_中文_中文_橫式_灰階白字.png" class="img-fluid" alt="Responsive image"> -->
 
-            <li><a href="#"
-                    class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0 btn-untoggle">櫃台功能</a>
-            </li>
-            <li><a href="#"
-                    class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle">門號查詢</a>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                    電信服務
-                </button>
-                <div class="collapse" id="dashboard-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><button
-                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#payment-collapse" aria-expanded="false">
-                                繳費
-                            </button>
-                            <div class="collapse" id="payment-collapse">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal" style="padding-left: 1rem">
-                                    <li><button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#mobile-payment-collapse"
-                                            aria-expanded="false">
-                                            行動電話類
-                                        </button>
-                                        <div class="collapse" id="mobile-payment-collapse">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal"
-                                                style="padding-left: 1rem">
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">行動電話繳費作業</a>
-                                                </li>
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">已違約未出帳補貼款</a>
-                                                </li>
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">攜碼移轉費收取作業</a>
-                                                </li>
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">帳單分期提前結清繳款作業</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#landline-payment-collapse"
-                                            aria-expanded="false">
-                                            固網類
-                                        </button>
-                                        <div class="collapse" id="landline-payment-collapse">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal"
-                                                style="padding-left: 1rem">
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">繳費作業</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#cable-payment-collapse"
-                                            aria-expanded="false">
-                                            有線電視類
-                                        </button>
-                                        <div class="collapse" id="cable-payment-collapse">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal"
-                                                style="padding-left: 1rem">
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">繳費作業</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#parking-payment-collapse"
-                                            aria-expanded="false">
-                                            台中市停車費類
-                                        </button>
-                                        <div class="collapse" id="parking-payment-collapse">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal"
-                                                style="padding-left: 1rem">
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">車牌停車費查詢及繳費</a>
-                                                </li>
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">持單繳費(單據需回送)</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#finished-payment-collapse"
-                                            aria-expanded="false">
-                                            已繳款資料查詢
-                                        </button>
-                                        <div class="collapse" id="finished-payment-collapse">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal"
-                                                style="padding-left: 1rem">
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">簡訊發送狀態查詢</a>
-                                                </li>
-                                                <li><a href="#"
-                                                        class="link d-inline-flex text-decoration-none  rounded">已繳款資料查詢</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                <li><a href="#"
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0 btn-untoggle">櫃台功能</a>
+                </li>
+                <li><a href="#"
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle">門號查詢</a>
+                </li>
+                <li><a href="#"
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="postPaidButton">月租型(固定資料)</a>
+                </li>
+                <li><a href="#"
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="internetPhoneButton">070(固定資料)</a>
+                </li>
+                <li><a href="#"
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="prePaidButton">預付型(固定資料)</a>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        電信服務
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><button
+                                    class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#payment-collapse" aria-expanded="false">
+                                    繳費
+                                </button>
+                                <div class="collapse" id="payment-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal" style="padding-left: 1rem">
+                                        <li><button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#mobile-payment-collapse"
+                                                aria-expanded="false">
+                                                行動電話類
+                                            </button>
+                                            <div class="collapse" id="mobile-payment-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal"
+                                                    style="padding-left: 1rem">
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">行動電話繳費作業</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">已違約未出帳補貼款</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">攜碼移轉費收取作業</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">帳單分期提前結清繳款作業</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#landline-payment-collapse"
+                                                aria-expanded="false">
+                                                固網類
+                                            </button>
+                                            <div class="collapse" id="landline-payment-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal"
+                                                    style="padding-left: 1rem">
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">繳費作業</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#cable-payment-collapse"
+                                                aria-expanded="false">
+                                                有線電視類
+                                            </button>
+                                            <div class="collapse" id="cable-payment-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal"
+                                                    style="padding-left: 1rem">
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">繳費作業</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#parking-payment-collapse"
+                                                aria-expanded="false">
+                                                台中市停車費類
+                                            </button>
+                                            <div class="collapse" id="parking-payment-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal"
+                                                    style="padding-left: 1rem">
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">車牌停車費查詢及繳費</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">持單繳費(單據需回送)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#finished-payment-collapse"
+                                                aria-expanded="false">
+                                                已繳款資料查詢
+                                            </button>
+                                            <div class="collapse" id="finished-payment-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal"
+                                                    style="padding-left: 1rem">
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">簡訊發送狀態查詢</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="link d-inline-flex text-decoration-none  rounded">已繳款資料查詢</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                        <li><a href="#" class="link d-inline-flex text-decoration-none  rounded">取消繳費</a>
-                        </li>
-                        <li><a href="#" class="link d-inline-flex text-decoration-none  rounded">補印帳單</a>
-                        </li>
-                        <li><a href="#"
-                                class="link d-inline-flex text-decoration-none  rounded">繳費櫃檯暫停推薦設定</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#POS-collapse" aria-expanded="false">
-                    POS
-                </button>
-                <div class="collapse" id="POS-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#E-commerce-collapse" aria-expanded="false">
-                    店商到店取貨
-                </button>
-                <div class="collapse" id="E-commerce-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#common-link-collapse" aria-expanded="false">
-                    常用連結
-                </button>
-                <div class="collapse" id="common-link-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#report-collapse" aria-expanded="false">
-                    報表
-                </button>
-                <div class="collapse" id="report-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#cooperative-company-collapse" aria-expanded="false">
-                    協力企業服務
-                </button>
-                <div class="collapse" id="cooperative-company-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#admin-collapse" aria-expanded="false">
-                    管理權限
-                </button>
-                <div class="collapse" id="admin-collapse">
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#other-collapse" aria-expanded="false">
-                    其他
-                </button>
-                <div class="collapse" id="other-collapse">
-                </div>
-            </li>
-        </ul>
+                            <li><a href="#" class="link d-inline-flex text-decoration-none  rounded">取消繳費</a>
+                            </li>
+                            <li><a href="#" class="link d-inline-flex text-decoration-none  rounded">補印帳單</a>
+                            </li>
+                            <li><a href="#" class="link d-inline-flex text-decoration-none  rounded">繳費櫃檯暫停推薦設定</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#POS-collapse" aria-expanded="false">
+                        POS
+                    </button>
+                    <div class="collapse" id="POS-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#E-commerce-collapse" aria-expanded="false">
+                        店商到店取貨
+                    </button>
+                    <div class="collapse" id="E-commerce-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#common-link-collapse" aria-expanded="false">
+                        常用連結
+                    </button>
+                    <div class="collapse" id="common-link-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#report-collapse" aria-expanded="false">
+                        報表
+                    </button>
+                    <div class="collapse" id="report-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#cooperative-company-collapse" aria-expanded="false">
+                        協力企業服務
+                    </button>
+                    <div class="collapse" id="cooperative-company-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#admin-collapse" aria-expanded="false">
+                        管理權限
+                    </button>
+                    <div class="collapse" id="admin-collapse">
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#other-collapse" aria-expanded="false">
+                        其他
+                    </button>
+                    <div class="collapse" id="other-collapse">
+                    </div>
+                </li>
+            </ul>
 
-    </div>
+        </div>
 
-    <!-- Main Wrapper -->
-  
+        <!-- Main Wrapper -->
+
         <!-- Top Nav -->
         <nav class="navbar top-navbar fixed-top navbar-light pt-0 bg-light justify-content-start" style="height: 50px;">
             <div class="menu-container" id="menu-btn">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-              </div>
+            </div>
             <!-- <div class="btn border-0" id="menu-btn">x</div> -->
             <img src="./img/RGB_TWM_Logo+_橫式_彩色藍字_中文_中文_橫式_彩色藍字.png" class="twm-logo" alt="台灣大哥大">
             <div class="d-flex flex-grow-1 px-2 justify-content-evenly">
@@ -232,27 +240,29 @@
             </div>
         </div>
         <div id="workingArea" class="d-flex flex-column flex-grow-1" style="transition: 0.5s;padding-top: 85px;">
-        <div class="ps-2 d-flex align-items-center flex-wrap">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">登入櫃台</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">一般取票/取號機取票</li>
-                    <li class="breadcrumb-item active" aria-current="page">票單結案</li>
-                    <li class="breadcrumb-item active" aria-current="page">登出櫃台</li>
-                </ol>
-            </nav>
-            <div class="ms-auto pe-1" style="margin-bottom: -20px;z-index: 10;">
-                <button class="btn btn-outline-secondary btn-sm btn-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                    詳細資料 0917153646
-                  </button>
-                <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">查詢優惠折抵額度</button>
+            <div class="ps-2 d-flex align-items-center flex-wrap">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">登入櫃台</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">一般取票/取號機取票</li>
+                        <li class="breadcrumb-item active" aria-current="page">票單結案</li>
+                        <li class="breadcrumb-item active" aria-current="page">登出櫃台</li>
+                    </ol>
+                </nav>
+                <div class="ms-auto pe-1" style="margin-bottom: -20px;z-index: 10;">
+                    <button class="btn btn-outline-secondary btn-sm btn-mobile" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                        詳細資料 0917153646
+                    </button>
+                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">查詢優惠折抵額度</button>
+                </div>
+                <div class="w-100 ps-1"> 沒有處裡中的票號!</div>
             </div>
-            <div class="w-100 ps-1"> 沒有處裡中的票號!</div>
-        </div>
-        <div class="info-container collapse bg-secondary bg-opacity-10 show" id="collapseExample">
-                    <table class="table table-sm table-borderless align-middle m-0">
-                        <tbody>
-                          <tr>
+            <div class="info-container collapse bg-secondary bg-opacity-10 show" id="collapseExample">
+                <table class="table table-sm table-borderless align-middle m-0" id="postPaidInfoBox">
+                    <tbody>
+                        <tr>
                             <th scope="row">門號</th>
                             <td>0917153646/4G(eSIM)</td>
                             <th scope="row">姓名</th>
@@ -261,87 +271,139 @@
                             <td>2022-12-30</td>
                             <th scope="row">密碼</th>
                             <td>Y</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th scope="row">門號狀態</th>
                             <td>正常使用中/欠費復話
                             <th scope="row">證號</th>
-                            <td >T12396****</td>
-                            <th scope="row" >附約到期日</th>
+                            <td>T12396****</td>
+                            <th scope="row">附約到期日</th>
                             <td>2022-12-30</td>
                             <th scope="row">最高網速</th>
                             <td>5G</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th scope="row">生日</th>
-                            <td >80年12月30號</td>
+                            <td>80年12月30號</td>
                             <th scope="row">特殊維繫</th>
                             <td>大特維/A</td>
                             <th scope="row">退租日期</th>
-                            <td ></td>
+                            <td></td>
                             <th scope="row">客戶分類</th>
-                            <td >VIP</td>
+                            <td>VIP</td>
                         </tr>
                         <tr>
                             <th scope="row">平均淨月租費</th>
                             <td>100</td>
                             <th scope="row">平均帳額</th>
-                            <td >555.5</td>
+                            <td>555.5</td>
                             <th scope="row">資費方案</th>
                             <td colspan="3">新4代399行量到降速</td>
                         </tr>
                         <tr>
                             <th scope="row">帳單地址</th>
                             <td colspan="7">920000 屏東縣潮州鎮*********</td>
-                          </tr>
-                          <!-- <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-borderless align-middle m-0" style="display: none;" id="internetPhoneInfoBox">
+                    <tbody>
+                        <tr>
+                            <th scope="row">門號</th>
+                            <td>0917153646</td>
                             <th scope="row">姓名</th>
-                            <td colspan="2">葛*豪</td>
-                          </tr>
-                          <tr>
+                            <td>葛*豪</td>
+                            <th scope="row">生日</th>
+                            <td>2022-08-09</td>
                             <th scope="row">證號</th>
-                            <td colspan="2">T12396****</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">帳單地址</th>
-                            <td colspan="2">634101 屏東縣潮州鎮*********</td>
-                          </tr> -->
-                        </tbody>
-                      </table>               
-        </div>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">門號查詢</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">台灣大客戶/網路會員</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">後送處裡</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">到店紀錄</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">用戶接觸紀錄</a>
-            </li>
-        </ul>
+                            <td>T12396****</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">門號狀態</th>
+                            <td>正常使用中
+                            <th scope="row">資費方案</th>
+                            <td>070-30型資費</td>
+                            <th scope="row">退租日期</th>
+                            <td>2028-02-06</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">通訊地址</th>
+                            <td colspan="7">920 屏東縣潮州鎮*********</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-borderless align-middle m-0" style="display: none;" id="prePaidInfoBox">
+                    <tbody>
+                        <tr>
+                            <th scope="row">門號</th>
+                            <td>0917153646/4G預付卡(eSIM)</td>
+                            <th scope="row">姓名</th>
+                            <td>葛*豪</td>
+                            <th scope="row">生日</th>
+                            <td>2022-08-09</td>
+                            <th scope="row">密碼</th>
+                            <td>Y</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">門號狀態</th>
+                            <td>使用中(正常開通)/使用中
+                            <th scope="row">證號</th>
+                            <td>T12396****</td>
+                            <th scope="row">主帳戶餘額</th>
+                            <td>123</td>
+                            <th scope="row">國籍</th>
+                            <td>中華明國</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">門號到期日</th>
+                            <td>2025-09-25</td>
+                            <th scope="row">可銷號復裝期限</th>
+                            <td>2025-09-25</td>
+                            <th scope="row">子帳戶餘額</th>
+                            <td><button type="button" class="btn btn-link" style="padding-left: 0;">查詢</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">專案/資費數據</th>
+                            <td colspan="3">機場4G預付卡_三合一sim / 4G GPRS行動上網加值服務</td>
+                            <th scope="row">地址</th>
+                            <td colspan="3">920 屏東縣潮州鎮*********</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">門號查詢</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">台灣大客戶/網路會員</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">後送處裡</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">到店紀錄</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">用戶接觸紀錄</a>
+                </li>
+            </ul>
 
-        <div class="search-container d-flex flex-grow-1">
+            <div class="search-container d-flex flex-grow-1">
 
-            <div class="p-3 d-flex flex-column border-end border-secondary border-4 w-25">
-                <div class="pb-3">
-                    <label for="inputState" class="form-label">查詢方式</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>門號</option>
-                        <option>證號</option>
-                        <option>合約編號</option>
-                    </select>
-                </div>
-                <div class="pb-3"><label for="inputEmail4" class="form-label">查詢號碼</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-                <!-- <div class="form-floating pb-3">
+                <div class="p-3 d-flex flex-column border-end border-secondary border-4 w-25">
+                    <div class="pb-3">
+                        <label for="inputState" class="form-label">查詢方式</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>門號</option>
+                            <option>證號</option>
+                            <option>合約編號</option>
+                        </select>
+                    </div>
+                    <div class="pb-3"><label for="inputEmail4" class="form-label">查詢號碼</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <!-- <div class="form-floating pb-3">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>門號</option>
                         <option value="1">證號</option>
@@ -354,83 +416,86 @@
                     <input type="text" class="form-control" id="seachKeyword" placeholder="查詢號碼">
                     <label for="seachKeyword">查詢號碼</label>
                 </div> -->
-                <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-primary">確定</button>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-primary">確定</button>
+                    </div>
                 </div>
-            </div>
-            <div class="p-3 w-75 d-flex flex-column">
-                <div>查詢條件：門號</div>
-                <div>
-                    <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">系統</th>
-                            <th scope="col">合約代碼</th>
-                            <th scope="col">門號</th>
-                            <th scope="col">姓名</th>
-                            <th scope="col">申裝日</th>
-                            <th scope="col">門號狀態</th>
-                            <th scope="col">主約到期日</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>TWM</td>
-                            <td>646456</td>
-                            <td>0909123321</td>
-                            <td>小小王</td>
-                            <td>2018-12-30</td>
-                            <td>正常使用中</td>
-                            <td>2025-05-12</td>
+                <div class="p-3 w-75 d-flex flex-column">
+                    <div class="alert alert-danger py-1" role="alert">
+                        務必口頭與客戶核對門號登記人姓氏無誤，方可提供以下系統顯示資訊
+                      </div>
+                    <div>查詢條件：門號</div>
+                    <div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">系統</th>
+                                    <th scope="col">合約代碼</th>
+                                    <th scope="col">門號</th>
+                                    <th scope="col">姓名</th>
+                                    <th scope="col">申裝日</th>
+                                    <th scope="col">門號狀態</th>
+                                    <th scope="col">專案限制</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>TWM</td>
+                                    <td>646456</td>
+                                    <td>0909123321</td>
+                                    <td>小小王</td>
+                                    <td>2018-12-30</td>
+                                    <td>正常使用中</td>
+                                    <td>Y</td>
 
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>070</td>
-                            <td>1232</td>
-                            <td>07012325688</td>
-                            <td>小小王</td>
-                            <td>2018-12-30</td>
-                            <td>正常使用中</td>
-                            <td>2025-05-12</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>070</td>
+                                    <td>1232</td>
+                                    <td>07012325688</td>
+                                    <td>小小王</td>
+                                    <td>2018-12-30</td>
+                                    <td>正常使用中</td>
+                                    <td></td>
 
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>INPPS</td>
-                            <td>645556</td>
-                            <td>0909123325</td>
-                            <td>小小王</td>
-                            <td>2018-12-30</td>
-                            <td>正常使用中</td>
-                            <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>INPPS</td>
+                                    <td>645556</td>
+                                    <td>0909123325</td>
+                                    <td>小小王</td>
+                                    <td>2018-12-30</td>
+                                    <td>正常使用中</td>
+                                    <td></td>
 
-                          </tr>
-                        </tbody>
+                                </tr>
+                            </tbody>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">【門市優惠】</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">【門市優惠】</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    「CBG AQ及NP」額度共$100,000，已使用$0，剩餘$100,000
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">確定</button>
+                </div>
             </div>
-            <div class="modal-body">
-              「CBG AQ及NP」額度共$100,000，已使用$0，剩餘$100,000
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">確定</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
