@@ -233,3 +233,40 @@ main {
   .change .bar3 {
     transform: translate(0, -7px) rotate(45deg);
   }
+
+
+
+ .no-show-box {
+    height: 0;
+    overflow: hidden;
+    z-index: -10;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ .show-box {
+    /* height: 100%; */
+    transition: 0.8s;
+    flex-grow: 1;
+ }
+
+ .arrow {
+     width: 50px;
+     height: 50px;
+     background-image: url(./img/arrowDown.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     cursor: pointer;
+     
+    }
+    
+.arrow-up {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transform: rotate(180deg);
+ }
+
+ .arrow-down {
+    margin-right: 20px;
+    margin-top: 10px;
+ }

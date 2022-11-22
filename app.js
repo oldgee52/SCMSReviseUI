@@ -27,3 +27,24 @@ function buttonActionForInfoBox(clickButton, showBox, hiddenBoxes) {
 buttonActionForInfoBox(postPaidButton, postPaidBox, [internetPhoneBox, prePaidInfoBox])
 buttonActionForInfoBox(internetPhoneButton, internetPhoneBox, [postPaidBox, prePaidInfoBox])
 buttonActionForInfoBox(prePaidButton, prePaidInfoBox, [internetPhoneBox, postPaidBox])
+
+
+const toggleFunctionBoxButton = document.getElementById("toggleFunctionBox")
+const functionBox = document.getElementById("functionBox")
+const searchBox = document.getElementById("searchContainer")
+toggleFunctionBoxButton.addEventListener("click", () => {
+  functionBox.classList.remove("no-show-box");
+  functionBox.classList.add("show-box");
+  searchBox.classList.remove("show-box");
+  searchBox.classList.add("no-show-box");
+}
+)
+
+const toggleSearchBoxButton = document.getElementById("toggleSearchBox")
+toggleSearchBoxButton.addEventListener("click", () => {
+  searchBox.classList.remove("no-show-box");
+  searchBox.classList.add("show-box");
+  functionBox.classList.remove("show-box");
+  functionBox.classList.add("no-show-box");
+
+})
