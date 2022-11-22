@@ -24,13 +24,16 @@
                         class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle">門號查詢</a>
                 </li>
                 <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="postPaidButton">月租型(固定資料)</a>
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
+                        id="postPaidButton">月租型(固定資料)</a>
                 </li>
                 <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="internetPhoneButton">070(固定資料)</a>
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
+                        id="internetPhoneButton">070(固定資料)</a>
                 </li>
                 <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle" id="prePaidButton">預付型(固定資料)</a>
+                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
+                        id="prePaidButton">預付型(固定資料)</a>
                 </li>
                 <li class="mb-1">
                     <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
@@ -306,7 +309,8 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="table table-sm table-borderless align-middle m-0" style="display: none;" id="internetPhoneInfoBox">
+                <table class="table table-sm table-borderless align-middle m-0" style="display: none;"
+                    id="internetPhoneInfoBox">
                     <tbody>
                         <tr>
                             <th scope="row">門號</th>
@@ -332,7 +336,8 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="table table-sm table-borderless align-middle m-0" style="display: none;" id="prePaidInfoBox">
+                <table class="table table-sm table-borderless align-middle m-0" style="display: none;"
+                    id="prePaidInfoBox">
                     <tbody>
                         <tr>
                             <th scope="row">門號</th>
@@ -371,61 +376,48 @@
                     </tbody>
                 </table>
             </div>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">門號查詢</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">台灣大客戶/網路會員</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">後送處裡</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">到店紀錄</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">用戶接觸紀錄</a>
-                </li>
-            </ul>
+            <div class="d-flex flex-column show-box" id="searchContainer">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">門號查詢</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">台灣大客戶/網路會員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">後送處裡</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">到店紀錄</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">用戶接觸紀錄</a>
+                    </li>
+                </ul>
 
-            <div class="search-container d-flex flex-grow-1">
+                <div class="search-container d-flex flex-grow-1">
 
-                <div class="p-3 d-flex flex-column border-end border-secondary border-4 w-25">
-                    <div class="pb-3">
-                        <label for="inputState" class="form-label">查詢方式</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>門號</option>
-                            <option>證號</option>
-                            <option>合約編號</option>
-                        </select>
+                    <div class="p-3 d-flex flex-column border-end border-secondary border-4 w-25">
+                        <div class="pb-3">
+                            <label for="inputState" class="form-label">查詢方式</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>門號</option>
+                                <option>證號</option>
+                                <option>合約編號</option>
+                            </select>
+                        </div>
+                        <div class="pb-3"><label for="inputEmail4" class="form-label">查詢號碼</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary">確定</button>
+                        </div>
                     </div>
-                    <div class="pb-3"><label for="inputEmail4" class="form-label">查詢號碼</label>
-                        <input type="text" class="form-control" id="inputEmail4">
-                    </div>
-                    <!-- <div class="form-floating pb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected>門號</option>
-                        <option value="1">證號</option>
-                        <option value="2">合約編號</option>
-                        <option value="3">帳單號碼</option>
-                    </select>
-                    <label for="floatingSelect">查詢方式</label>
-                </div>
-                <div class="form-floating pb-3">
-                    <input type="text" class="form-control" id="seachKeyword" placeholder="查詢號碼">
-                    <label for="seachKeyword">查詢號碼</label>
-                </div> -->
-                    <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-primary">確定</button>
-                    </div>
-                </div>
-                <div class="p-3 w-75 d-flex flex-column">
-                    <div class="alert alert-danger py-1" role="alert">
-                        務必口頭與客戶核對門號登記人姓氏無誤，方可提供以下系統顯示資訊
-                      </div>
-                    <div>查詢條件：門號</div>
-                    <div>
+                    <div class="p-3 w-75 d-flex flex-column position-relative">
+                        <div class="alert alert-danger py-1" role="alert">
+                            務必口頭與客戶核對門號登記人姓氏無誤，方可提供以下系統顯示資訊
+                        </div>
+                        <div>查詢條件：門號</div>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -449,7 +441,6 @@
                                     <td>2018-12-30</td>
                                     <td>正常使用中</td>
                                     <td>Y</td>
-
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
@@ -460,7 +451,6 @@
                                     <td>2018-12-30</td>
                                     <td>正常使用中</td>
                                     <td></td>
-
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
@@ -471,14 +461,33 @@
                                     <td>2018-12-30</td>
                                     <td>正常使用中</td>
                                     <td></td>
-
                                 </tr>
                             </tbody>
+                        </table>
+                        <div class="arrow arrow-up position-absolute bottom-0 end-0" id="toggleFunctionBox"></div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="no-show-box position-relative" id="functionBox">
+                <div class="arrow arrow-down position-absolute top-0 end-0" id="toggleSearchBox"></div>
+                <div class="p-3 mt-2">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex ">
+                        <button type="button" class="btn btn-primary me-1">送出</button>
+                        <button type="button" class="btn btn-secondary">取消</button>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
