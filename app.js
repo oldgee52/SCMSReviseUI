@@ -48,3 +48,21 @@ toggleSearchBoxButton.addEventListener("click", () => {
   functionBox.classList.add("no-show-box");
 
 })
+
+
+const toggleSortTable = document.querySelectorAll(".sortable")
+
+toggleSortTable.forEach(sortTable => {
+  sortTable.addEventListener("click", () => {
+    const asc = sortTable.classList.contains("asc")
+    const desc = sortTable.classList.contains("desc")
+    toggleSortTable.forEach(sortTable => {
+      sortTable.classList.remove("asc", "desc")
+    })
+    if (desc || !asc && !desc) {
+      sortTable.classList.add("asc")
+    } else {
+      sortTable.classList.add("desc")
+    }
+  })
+})
