@@ -423,46 +423,16 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col" class="sortable">系統</th>
-                                    <th scope="col" class="sortable">合約代碼</th>
-                                    <th scope="col">門號</th>
+                                    <th scope="col" class="sortable" id="system">系統</th>
+                                    <th scope="col" class="sortable" id="subID">合約代碼</th>
+                                    <th scope="col" class="sortable" id="number">門號</th>
                                     <th scope="col">姓名</th>
-                                    <th scope="col" class="sortable">申裝日</th>
-                                    <th scope="col" class="sortable">門號狀態</th>
+                                    <th scope="col" class="sortable" id="createDate">申裝日</th>
+                                    <th scope="col" class="sortable" id="contract">門號狀態</th>
                                     <th scope="col">專案限制</th>
                                 </tr>
                             </thead>
-                            <tbody style="cursor: pointer;">
-                                <tr class="info-table-active">
-                                    <th scope="row">1</th>
-                                    <td>TWM</td>
-                                    <td>646456</td>
-                                    <td>0909123321</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td>Y</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>070</td>
-                                    <td>1232</td>
-                                    <td>07012325688</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>INPPS</td>
-                                    <td>645556</td>
-                                    <td>0909123325</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td></td>
-                                </tr>
+                            <tbody style="cursor: pointer;" id="userPhoneInfo">
                             </tbody>
                         </table>
                         <div class="arrow arrow-up position-absolute bottom-0 end-0" id="toggleFunctionBox"></div>
