@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <title>SCMSReviseUI</title>
 </head>
 
@@ -22,18 +23,6 @@
                 </li>
                 <li><a href="#"
                         class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle">門號查詢</a>
-                </li>
-                <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
-                        id="postPaidButton">月租型(固定資料)</a>
-                </li>
-                <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
-                        id="internetPhoneButton">070(固定資料)</a>
-                </li>
-                <li><a href="#"
-                        class="rounded btn btn-toggle d-inline-flex align-items-center rounded border-0  btn-untoggle"
-                        id="prePaidButton">預付型(固定資料)</a>
                 </li>
                 <li class="mb-1">
                     <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0  collapsed"
@@ -314,7 +303,7 @@
                     <tbody>
                         <tr>
                             <th scope="row">門號</th>
-                            <td>0917153646</td>
+                            <td>07012325687</td>
                             <th scope="row">姓名</th>
                             <td>葛*豪</td>
                             <th scope="row">生日</th>
@@ -418,50 +407,20 @@
                             務必口頭與客戶核對門號登記人姓氏無誤，方可提供以下系統顯示資訊
                         </div>
                         <div>查詢條件：門號</div>
-                        <table class="table table-striped">
+                        <table class="table table-striped table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">系統</th>
-                                    <th scope="col">合約代碼</th>
-                                    <th scope="col">門號</th>
+                                    <th scope="col" class="sortable" id="system">系統</th>
+                                    <th scope="col" class="sortable" id="subID">合約代碼</th>
+                                    <th scope="col" class="sortable" id="number">門號</th>
                                     <th scope="col">姓名</th>
-                                    <th scope="col">申裝日</th>
-                                    <th scope="col">門號狀態</th>
+                                    <th scope="col" class="sortable" id="createDate">申裝日</th>
+                                    <th scope="col" class="sortable" id="contract">門號狀態</th>
                                     <th scope="col">專案限制</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>TWM</td>
-                                    <td>646456</td>
-                                    <td>0909123321</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td>Y</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>070</td>
-                                    <td>1232</td>
-                                    <td>07012325688</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>INPPS</td>
-                                    <td>645556</td>
-                                    <td>0909123325</td>
-                                    <td>小小王</td>
-                                    <td>2018-12-30</td>
-                                    <td>正常使用中</td>
-                                    <td></td>
-                                </tr>
+                            <tbody style="cursor: pointer;" id="userPhoneInfo">
                             </tbody>
                         </table>
                         <div class="arrow arrow-up position-absolute bottom-0 end-0" id="toggleFunctionBox"></div>
