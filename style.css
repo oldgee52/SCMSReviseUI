@@ -38,18 +38,6 @@ body {
     margin-left: 0;
 }
 
-/* for main section */
-.active-cont {
-    /* margin-left: 250px; */
-}
-
-/* #menu-btn {
-    background-color: #100901;
-    color: #fff;
-    margin-left: -62px;
-    text-align: center;
-} */
-
 .my-container input {
     border-radius: 2rem;
     padding: 2px 20px;
@@ -81,7 +69,6 @@ main {
 }
 
 .btn-toggle:hover {
-    /* color: rgba(0, 0, 0, .85); */
     color: aliceblue;
     background-color: #f07d12;
 }
@@ -89,8 +76,6 @@ main {
 .btn-toggle::before {
     width: 1.25em;
     line-height: 0;
-    /* content: ">"; */
-    /* font-size: 20px; */
     content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='black' stroke='rgba%0,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
     transition: transform .35s ease;
     transform-origin: .5em 50%;
@@ -102,20 +87,12 @@ main {
     content: "";
 }
 
-/* .btn-toggle[aria-expanded="true"] {
-    color: rgba(0, 0, 0, .85);
-} */
-
-
 .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
 }
 
 .btn-mobile::after {
     width: 1em;
-    /* position: absolute; */
-    /* content: ">"; */
-    /* font-size: 20px; */
     display: inline-block;
     content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='4 0 14 14'%3e%3cpath fill='gray' stroke='rgba%0,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
     transition: .2s ease;
@@ -177,7 +154,6 @@ main {
 
 .info-container {
     width: 100%;
-    /* background-color:rgba(0, 0, 0, .1); */
     padding: 5px;
     
 }
@@ -189,24 +165,7 @@ main {
 .info-container th {
     white-space:nowrap;
     word-break:keep-all;
-    /* background-color: #f07d12; */
 }
-
-/* 
-::-webkit-scrollbar {
-    width: 10px;
-    display: none;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px white;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px white;
-} */
 
 .menu-container {
     display: inline-block;
@@ -245,8 +204,7 @@ main {
 }
 
  .show-box {
-    /* height: 100%; */
-    transition: 0.8s;
+    transition: 0.3s;
     flex-grow: 1;
  }
 

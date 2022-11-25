@@ -9,9 +9,6 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("change")
 });
 
-const postPaidButton = document.getElementById("postPaidButton");
-const internetPhoneButton = document.getElementById("internetPhoneButton");
-const prePaidButton = document.getElementById("prePaidButton");
 const postPaidBox = document.getElementById("postPaidInfoBox");
 const internetPhoneBox = document.getElementById("internetPhoneInfoBox");
 const prePaidInfoBox = document.getElementById("prePaidInfoBox");
@@ -24,9 +21,6 @@ function buttonActionForInfoBox(clickButton, showBox, hiddenBoxes) {
   })
 }
 
-buttonActionForInfoBox(postPaidButton, postPaidBox, [internetPhoneBox, prePaidInfoBox])
-buttonActionForInfoBox(internetPhoneButton, internetPhoneBox, [postPaidBox, prePaidInfoBox])
-buttonActionForInfoBox(prePaidButton, prePaidInfoBox, [internetPhoneBox, postPaidBox])
 
 
 const toggleFunctionBoxButton = document.getElementById("toggleFunctionBox")
@@ -82,7 +76,7 @@ const userData = [{
   number: "07012325687",
   name: "小小王",
   createDate: "2019-12-30",
-  numberStatus: "正常使用中",
+  numberStatus: "停話",
   contract: ""
 },
 {
@@ -91,7 +85,7 @@ const userData = [{
   number: "0909123548",
   name: "小小王",
   createDate: "2019-11-30",
-  numberStatus: "失效",
+  numberStatus: "過期或失效",
   contract: ""
 }
 ]
@@ -99,6 +93,8 @@ const userPhoneInfo = document.getElementById("userPhoneInfo")
 
 const createRow = (obj, i) => {
   const row = document.createElement("tr");
+  row.setAttribute("id", obj.system + obj.subID)
+  row.setAttribute("class", "infoTableBox")
   const objKeys = Object.keys(obj);
   objKeys.map((key) => {
     const cell = document.createElement("td");
@@ -117,6 +113,19 @@ const getTableContent = (data) => {
   data.map((obj, i) => {
     const row = createRow(obj, i + 1);
     userPhoneInfo.appendChild(row);
+  });
+  const postPaidButton = document.getElementById("TWM646456");
+  const internetPhoneButton = document.getElementById("0701232");
+  const prePaidButton = document.getElementById("INPPS645645");
+  buttonActionForInfoBox(postPaidButton, postPaidBox, [internetPhoneBox, prePaidInfoBox])
+  buttonActionForInfoBox(internetPhoneButton, internetPhoneBox, [postPaidBox, prePaidInfoBox]);
+  buttonActionForInfoBox(prePaidButton, prePaidInfoBox, [internetPhoneBox, postPaidBox]);
+  const activeColumn = document.querySelectorAll(".infoTableBox")
+  activeColumn.forEach((column) => {
+    column.addEventListener("click", (e) => {
+      activeColumn.forEach(column => column.classList.remove('info-table-active'));
+      e.currentTarget.classList.toggle("info-table-active");
+    });
   });
 };
 
